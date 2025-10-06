@@ -1,0 +1,56 @@
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore Python cache files
+__pycache__/
+*.py[cod]
+
+# Ignore virtual environments
+venv/
+env/
+ENV/
+
+# Ignore logs and temporary files
+*.log
+*.tmp
+
+# Ignore IDE/editor specific files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore data files
+*.csv
+*.dat
+*.pkl
+
+# Ignore model files
+*.h5
+*.ckpt
+*.onnx
+
+# Ignore media files
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+# Ignore other binary files
+*.bin
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Ignore archives
+*.zip
+*.tar.gz
+*.rar
+*.7z
