@@ -1,0 +1,12 @@
+torch
+torchvision
+torchaudio
+timm
+facenet-pytorch
+scipy
+scikit-learn
+numpy
+opencv-python
+pandas
+matplotlib
+tqdm
