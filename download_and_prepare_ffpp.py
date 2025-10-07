@@ -111,4 +111,3 @@ if __name__ == '__main__':
     print("1. Run 'preprocess.py' to detect and extract faces from videos.")
     print("2. Run 'feature_extraction.py' to generate embeddings for each domain.")
     print("3. Run 'train_evaluate.py' to train and evaluate the models.")
-
