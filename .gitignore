@@ -27,7 +27,6 @@ ENV/
 .ipynb_checkpoints/
 
 # Ignore data files
-*.csv
 *.dat
 *.pkl
 
