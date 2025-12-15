@@ -1,21 +1,41 @@
-# Ignore system files
+############################################
+# OS / System Files
+############################################
 .DS_Store
 Thumbs.db
+desktop.ini
 
-# Ignore Python cache files
+
+############################################
+# Python Cache & Compiled Files
+############################################
 __pycache__/
 *.py[cod]
+*$py.class
 
-# Ignore virtual environments
+
+############################################
+# Virtual Environments
+############################################
 venv/
 env/
 ENV/
+.venv/
 
-# Ignore logs and temporary files
+
+############################################
+# Logs & Temporary Files
+############################################
 *.log
 *.tmp
+*.temp
+*.swp
+*.bak
 
-# Ignore IDE/editor specific files
+
+############################################
+# IDE / Editor Files
+############################################
 .vscode/
 .idea/
 *.suo
@@ -23,34 +43,85 @@ ENV/
 *.njsproj
 *.sln
 
-# Ignore Jupyter Notebook checkpoints
+
+############################################
+# Jupyter Notebook Files
+############################################
 .ipynb_checkpoints/
 
-# Ignore data files
-*.csv
+
+############################################
+# Data & Serialized Objects
+############################################
 *.dat
 *.pkl
+*.pickle
+*.npy
+*.npz
+*.csv
+*.tsv
 
-# Ignore model files
+
+############################################
+# Model Weights & Checkpoints
+############################################
 *.h5
 *.ckpt
 *.onnx
+*.pth
+*.pt
+*.pb
 
-# Ignore media files
+checkpoints_attention/
+checkpoints_baseline/
+
+
+############################################
+# Media Files (Videos / Audio)
+############################################
 *.mp4
 *.avi
 *.mov
 *.mkv
+*.wav
+*.mp3
 
-# Ignore other binary files
+
+############################################
+# Binary & Shared Library Files
+############################################
 *.bin
 *.exe
 *.dll
 *.so
 *.dylib
 
-# Ignore archives
+
+############################################
+# Archives
+############################################
 *.zip
+*.tar
 *.tar.gz
 *.rar
 *.7z
+
+
+############################################
+# Project-Specific Large Directories
+############################################
+FaceForensics++/
+extracted_features/
+preprocessed_faces/
+checkpoints/
+checkpoints_*/
+
+# Metadata files (optional - uncomment if you want to track these)
+# ffpp_metadata.csv
+
+
+############################################
+# Environment / Secrets
+############################################
+.env
+.env.*
