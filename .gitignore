@@ -126,3 +126,9 @@ checkpoints_*/
 /datasets/
 
 
+/preprocessed_faces_integrated/
+
+
+/
+extracted_features_integrated/
+/checkpoints/   
