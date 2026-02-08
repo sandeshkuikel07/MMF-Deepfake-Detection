@@ -1,11 +1,72 @@
 {
   "config": {
-    "spatial_dim": 2048,
-    "freq_dim": 4,
-    "semantic_dim": 384,
-    "epochs": 15,
-    "batch_size": 128,
-    "learning_rate": 0.0001
+    "ffpp_percentage": 0.1,
+    "celebdf_percentage": 0.05,
+    "dfdc_percentage": 0.3,
+    "hidf_percentage": 0.5,
+    "model_type": "CompleteAttentionModel",
+    "epochs": 20,
+    "batch_size": 128
   },
-  "models": {}
+  "training_metrics": {
+    "model": "complete_attention_all_datasets",
+    "dataset": "All Datasets",
+    "accuracy": 0.7240754169688179,
+    "precision": 0.834354653389506,
+    "recall": 0.7386786600496278,
+    "f1": 0.7578361177406523,
+    "auc": 0.8439527225996996
+  },
+  "cross_dataset_evaluation": {
+    "FaceForensics++": {
+      "accuracy": 0.6035714285714285,
+      "precision": 0.8867924528301887,
+      "recall": 0.6025641025641025,
+      "f1": 0.7175572519083969,
+      "auc": 0.6268115942028986,
+      "n_samples": 280,
+      "n_real": 46,
+      "n_fake": 234
+    },
+    "Celeb-DF": {
+      "accuracy": 0.6363636363636364,
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "f1": 0.5,
+      "auc": 0.8888888888888888,
+      "n_samples": 11,
+      "n_real": 9,
+      "n_fake": 2
+    },
+    "DFDC": {
+      "accuracy": 0.34074074074074073,
+      "precision": 0.813953488372093,
+      "recall": 0.3017241379310345,
+      "f1": 0.44025157232704404,
+      "auc": 0.49205989110707804,
+      "n_samples": 135,
+      "n_real": 19,
+      "n_fake": 116
+    },
+    "HiDF": {
+      "accuracy": 0.7482088989441931,
+      "precision": 0.8443695479777954,
+      "recall": 0.6930838079739625,
+      "f1": 0.7612834033425686,
+      "auc": 0.8585497938296384,
+      "n_samples": 10608,
+      "n_real": 4463,
+      "n_fake": 6145
+    },
+    "All Combined": {
+      "accuracy": 0.7320522117476432,
+      "precision": 0.834354653389506,
+      "recall": 0.6757133995037221,
+      "f1": 0.746700942587832,
+      "auc": 0.8439527225996996,
+      "n_samples": 11032,
+      "n_real": 4584,
+      "n_fake": 6448
+    }
+  }
 }
